@@ -1,17 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using BookStoreAPI.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BookStoreAPI.Contracts;
+using BookStoreAPI.Services;
+using Microsoft.OpenApi.Models;
+using BookStoreAPI.Mappings;
+using AutoMapper;
 
 namespace BookStoreAPI
 {
@@ -32,7 +31,29 @@ namespace BookStoreAPI
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddRazorPages();
+            //services.AddRazorPages();
+
+            services.AddCors(c =>
+            {
+                c.AddPolicy("CorsPolicy", 
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
+
+            services.AddAutoMapper(typeof(Maps));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Book store API",
+                    Version = "1"
+                });
+            });
+
+            services.AddControllers();
+            services.AddSingleton<ILoggerService, LoggerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +72,15 @@ namespace BookStoreAPI
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            //app.UseStaticFiles();
+
+            app.UseCors("CorsPolicy");
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => 
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Book Store API");
+            });
 
             app.UseRouting();
 
@@ -60,7 +89,7 @@ namespace BookStoreAPI
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
