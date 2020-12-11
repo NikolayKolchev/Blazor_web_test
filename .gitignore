@@ -230,3 +230,7 @@ project.lock.json
 BookStoreAPI/BookStoreUI/obj/Debug/netcoreapp3.1/BookStoreUI.RazorComponent.input.cache
 BookStoreAPI/BookStoreAPI/obj/Debug/netcoreapp3.1/BookStoreAPI.csprojAssemblyReference.cache
 BookStoreAPI/.vs/BookStoreAPI/DesignTimeBuild/.dtbcache.v2
+*.dll
+*.pdb
+*.txt
+*.cache
