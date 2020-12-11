@@ -96,6 +96,7 @@ C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreap
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.csproj.CoreCompileInputs.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cache

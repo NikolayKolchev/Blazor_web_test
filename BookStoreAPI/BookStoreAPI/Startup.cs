@@ -11,6 +11,9 @@ using BookStoreAPI.Services;
 using Microsoft.OpenApi.Models;
 using BookStoreAPI.Mappings;
 using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace BookStoreAPI
 {
@@ -29,7 +32,8 @@ namespace BookStoreAPI
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             //services.AddRazorPages();
 
@@ -40,6 +44,21 @@ namespace BookStoreAPI
                     .AllowAnyMethod()
                     .AllowAnyHeader());
             });
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+              .AddJwtBearer(o => {
+                  o.TokenValidationParameters = new TokenValidationParameters
+                  {
+                      ValidateIssuer = true,
+                      ValidateAudience = true,
+                      ValidateLifetime = true,
+                      ValidateIssuerSigningKey = true,
+                      ValidIssuer = Configuration["Jwt:Issuer"],
+                      ValidAudience = Configuration["Jwt:Issuer"],
+                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+
+                  };
+              });
 
             services.AddAutoMapper(typeof(Maps));
 
@@ -57,7 +76,8 @@ namespace BookStoreAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env
+            , UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -75,6 +95,8 @@ namespace BookStoreAPI
             //app.UseStaticFiles();
 
             app.UseCors("CorsPolicy");
+
+            SeedData.Seed(userManager, roleManager).Wait();
 
             app.UseSwagger();
             app.UseSwaggerUI(c => 
