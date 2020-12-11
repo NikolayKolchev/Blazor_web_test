@@ -66,9 +66,6 @@ C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreap
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.csprojAssemblyReference.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.AssemblyInfoInputs.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.AssemblyInfo.cs
-C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.csproj.CoreCompileInputs.cache
-C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.RazorAssemblyInfo.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.RazorAssemblyInfo.cs
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.TagHelpers.input.cache
@@ -92,3 +89,14 @@ C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreap
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.dll
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.pdb
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.genruntimeconfig.cache
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.csproj.CoreCompileInputs.cache
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreAPI\obj\Debug\netcoreapp3.1\BookStoreAPI.MvcApplicationPartsAssemblyInfo.cache
