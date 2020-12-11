@@ -66,6 +66,15 @@ namespace BookStoreUI.Services
             }
 
             var request = new HttpRequestMessage(HttpMethod.Get, url + id);
+            var client = HttpClient.CreateClient();
+
+            HttpResponseMessage responseMessage = await client.SendAsync(request);
+
+            if(responseMessage.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                var content = await responseMessage.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<T>(content);
+            }
 
             return null;
         }
