@@ -55,8 +55,9 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-.cache
-.suo
+*.cache
+*.suo
+*.ddl
 
 # StyleCop
 StyleCopReport.xml
@@ -89,6 +90,8 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.ddl
+*.suo
 
 # Chutzpah Test files
 _Chutzpah*
