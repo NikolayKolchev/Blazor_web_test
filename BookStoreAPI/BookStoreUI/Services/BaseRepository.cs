@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace BookStoreUI.Services
@@ -79,14 +80,41 @@ namespace BookStoreUI.Services
             return null;
         }
 
-        public Task<IList<T>> Get(string url)
+        public async Task<IList<T>> Get(string url)
         {
-            throw new NotImplementedException();
+            var request = new HttpRequestMessage(HttpMethod.Get, url);
+            var client = HttpClient.CreateClient();
+
+            HttpResponseMessage httpResponseMessage = await client.SendAsync(request);
+
+            if(httpResponseMessage.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                var content = await httpResponseMessage.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<IList<T>>(content);
+            }
+
+            return Array.Empty<T>();
         }
 
-        public Task<bool> Update(string url, T obj, int id)
+        public async Task<bool> Update(string url, T obj, int id)
         {
-            throw new NotImplementedException();
+            if(obj == null && id < 1)
+            {
+                return false;
+            }
+
+            var request = new HttpRequestMessage(HttpMethod.Put, url + id);
+            request.Content = new StringContent(JsonConvert.SerializeObject(obj), Encoding.UTF8, "application/json");
+
+            var client = HttpClient.CreateClient();
+
+            HttpResponseMessage response = await client.SendAsync(request);
+            if(response.StatusCode == System.Net.HttpStatusCode.NoContent)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

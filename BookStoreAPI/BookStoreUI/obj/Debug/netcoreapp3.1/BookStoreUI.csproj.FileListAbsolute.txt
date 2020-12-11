@@ -37,3 +37,15 @@ C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\BookStoreUI.pdb
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\BookStoreUI.genruntimeconfig.cache
 C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\BookStoreUI.csproj.CopyComplete
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\BookStoreUI.csproj.CoreCompileInputs.cache
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\BookStoreUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\RazorDeclaration\BookStoreUI.dll
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Work\Playground\Blazor_web_test\BookStoreAPI\BookStoreUI\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
