@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "j7FElj1pW5fmrAb2Pwg27HbZ1C5YeTkEG4I4gzTp+ExRKrIIyrqc0ZCErgSo72j/VaafjpIu0f9XR1v+fHBZxw==",
+  "dgSpecHash": "yP87/YpbJVWJnfmBj+2weGCQ1Xk/Xt0vh4tX0pwAp7HjGUxRjBehmw6axyzQ8CxsFvy8Ha+I54GcSC8Bup7VDQ==",
   "success": true,
   "projectFilePath": "C:\\Work\\Playground\\Blazor_web_test\\BookStoreAPI\\BookStoreUI\\BookStoreUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dexter\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
